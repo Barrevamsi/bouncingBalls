@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Music Animation</title>
+    <style>
+        body {
+            margin: 100px;
+            position: relative;
+            height: 70vh;
+            background-color:antiquewhite;
+          
+        }
+        .container {
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #bar1, #bar2, #bar3, #bar4, #bar5, #bar6, #bar7 {
+            display: inline-block;
+            background-color: rgb(66, 92, 158);
+            width: 20px;
+            position: absolute;
+            bottom: 0;
+            transform-origin: bottom;
+            animation: wave 1s infinite ease-in-out;
+        }
+        #bar1 { 
+            height: 160px;
+             animation-delay: 0.1s; 
+             left: 0; 
+             animation-direction: alternate;
+            }
+        #bar2 { 
+            height: 120px; 
+            animation-delay: 0.2s;
+             left: 30px;
+             animation-direction: alternate;
+             }
+        #bar3 { 
+            height: 100px;
+             animation-delay: 0.3s;
+              left: 60px; 
+              animation-direction: alternate;
+            }
+        #bar4 { 
+            height: 120px; 
+            animation-delay: 0.4s; 
+            left: 90px; 
+            animation-direction: alternate;
+        }
+        #bar5 { 
+            height: 140px; 
+            animation-delay: 0.5s; 
+            left: 120px;
+            animation-direction: alternate;
+         }
+        #bar6 {
+             height: 160px;
+              animation-delay: 0.6s; 
+              left: 150px; 
+              animation-direction: alternate;
+            }
+        #bar7 { 
+            height: 180px;
+             animation-delay: 0.7s;
+              left: 180px; 
+              animation-direction: alternate;
+            }
+
+        @keyframes wave {
+            0% {
+                transform: scaleY(1);
+            }
+            50% {
+                transform: scaleY(1.5);
+            }
+            100%{
+                transform: scaleY(0.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="bar1"></div>
+        <div id="bar2"></div>
+        <div id="bar3"></div>
+        <div id="bar4"></div>
+        <div id="bar5"></div>
+        <div id="bar6"></div>
+        <div id="bar7"></div>
+    </div>
+    <div style="text-align:right  ;" >
+        <a href=""><img src="./1200x1200bb.jpg" alt="" width="200px" height="200px"> </a>
+        <div>
+        <br>
+        <div style="text-align: right;">
+            <a href="./[iSongs.info] 06 - Gaallo Thelinattunde.mp3" download="">
+                <audio src="./[iSongs.info] 03 - You & I.mp3" controls  muted style="width: 200px;"></audio>
+                <br>
+                <b> My Heart Is Beating.mp3</b>
+        </div>
+</body>
+</html>
