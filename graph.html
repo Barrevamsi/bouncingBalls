@@ -6,20 +6,24 @@
     <title>Graph Music Animation</title>
     <style>
         body {
-            margin: 200px;
+            margin: 100px;
             position: relative;
             height: 70vh;
             background-color:antiquewhite;
           
         }
         .container {
-            position: absolute;
-            bottom: 100px;
-            left: 50%;
-            transform: translateX(-50%);
+            width: 300px; 
+            display: flex;
+            justify-content: space-between; 
+            padding: 20px; 
+          
+
+            
+            
         }
         #bar1, #bar2, #bar3, #bar4, #bar5, #bar6, #bar7 {
-            display: inline-block;
+            display: inline-block ; 
             background-color: rgb(20, 29, 14);
             width: 20px;
             position: absolute;
@@ -81,27 +85,41 @@
                 transform: scaleY(0.5);
             }
         }
+       .main{
+        display: flex;
+        flex-direction: row;
+        align-content: space-evenly;
+        gap: 200px;
+        
+    }
+       .image{
+        display: inline-block;
+        
+       }
     </style>
+
 </head>
-<body>
-    <div class="container">
-        <div id="bar1"></div>
-        <div id="bar2"></div>
-        <div id="bar3"></div>
-        <div id="bar4"></div>
-        <div id="bar5"></div>
-        <div id="bar6"></div>
-        <div id="bar7"></div>
-    </div>
-    <div style="text-align:right  ;" >
-        <a href=""><img src="./1200x1200bb.jpg" alt="" width="300px" height="300px"> </a>
-        <div>
-        <br>
-        <div style="text-align: right;">
-            <a href="./[iSongs.info] 06 - Gaallo Thelinattunde.mp3" download="">
+<body> 
+    <div class="main">
+        <div class="container">
+            <div id="bar1"></div>
+            <div id="bar2"></div>
+            <div id="bar3"></div>
+            <div id="bar4"></div>
+            <div id="bar5"></div>
+            <div id="bar6"></div>
+            <div id="bar7"></div>
+        </div>
+        <div class="image">
+            <img src="./1200x1200bb.jpg" alt="" width="300px" height="300px"> 
+            <br>
+            <div class="song">
+                <a href="./[iSongs.info] 06 - Gaallo Thelinattunde.mp3" download="">
                 <audio src="./[iSongs.info] 03 - You & I.mp3" controls  muted style="width: 300px;"></audio>
                 <br>
-                <b> My Heart Is Beating.mp3</b>
+                <b> My Heart Is n Beating.mp3</b>
+            </div>
         </div>
+    </div>
 </body>
 </html>
